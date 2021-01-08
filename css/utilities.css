@@ -1,0 +1,130 @@
+/* Utilities */
+.container {
+  max-width: 1200px;
+  background: #f4f4f4;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.small{
+  font-size: 0.9rem;
+  color: rgb(109, 109, 109);
+}
+
+.lead {
+  font-family: "Bangers", cursive;
+  font-size: 3.3rem;
+}
+
+.lead-p {
+  font-size: 1.6rem;
+}
+
+.bottom-line {
+  height: 3px;
+  width: 6rem;
+  background: var(--primary-color);
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+.bottom-border {
+  height: 1px;
+  width: 100%;
+  background: #444;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+.card{
+  background: #f4f4f4;
+  padding: 1.3rem;
+}
+
+.card-dark{
+  background: #333;
+  padding: 1.3rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1.4rem 3.3rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: #333;
+}
+
+.btn-secondary {
+  background: var(--medium-color);
+  color: #fff;
+}
+
+.btn-dark {
+  background: #333;
+  color: #fff;
+}
+
+.btn-light {
+  background: #fff;
+  color: #333;
+}
+
+.btn:hover {
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-primary:hover {
+  background: var(--medium-color);
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background: var(--primary-color);
+  color: #333;
+}
+
+.header-content{
+  height: 75vh;
+  width: 99vw;
+  margin-top: 6.3rem;
+}
+
+.header{
+  height: 60vh;
+  width: 99vw;
+  margin-top: 6.3rem;
+}
+
+.overlay {
+  background: rgba(24, 39, 51, 0.6);
+  height: 60vh;
+}
+
+.image{
+  width: 350px;
+  height: 350px;
+  margin: 5px;
+}
+
+.testimonial{
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin: 1rem 0;
+}
+
+/* Variables */
+:root {
+  --primary-color: #f4d03f;
+  --secondary-color: #9b59b6;
+  --medium-color: #4bd4a9;
+}
