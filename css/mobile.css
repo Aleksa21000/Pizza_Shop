@@ -181,7 +181,12 @@
   /* Main Nav */
   .main-nav {
     flex-direction: column; 
-  }  
+  }
+  
+  #logo {
+    height: 80px;
+    width: 120px;
+  }
 
   /* Header Home */
   .header-content .overlay{
@@ -209,6 +214,37 @@
     grid-template-columns: 1fr;
     grid-gap:2rem;
     margin-left:0;
+  }
+
+  #menu-a .menu-features {
+    margin-left:0;
+  }
+
+  #menu-a .menu-images-1 {
+    width: 100%;
+  }
+  #menu-a .menu-images-2 {
+    width: 100%;
+  }
+  #menu-a .menu-images-3 {
+    width: 100%;
+  }
+  #menu-a .menu-images-4 {
+    width: 100%;
+  }
+  #menu-a .menu-images-5 {
+    width: 100%;
+  }
+  #menu-a .menu-images-6 {
+    width: 100%;
+  }
+
+  #menu-a .menu-features .overlay{
+    width: 100%;
+  }
+  
+  #menu-a .menu-features .overlay .border {
+    display: none;
   }
 
   /* Header - A */
@@ -324,6 +360,14 @@
     padding-top: 1rem;
   }
 
+  .header{
+    height: 75vh;
+  }
+
+  .header .overlay{
+    height: 75vh;
+  }
+
   /* Header - B */
 
   .header-reverse .lead{
@@ -348,8 +392,8 @@
   }
 }
 
-/* Landscape 568px */
-@media (max-height: 568px){
+/* Landscape 500px */
+@media (max-height: 500px){
   .header-content h1 {
     font-size: 3rem;
     padding-top: 1rem;

@@ -34,7 +34,7 @@ li {
   position: fixed;
   top: 0;
   right: 0;
-  background-color: #f4f4f4;
+  background-color: #fff;
   width: 100vw;
   display: flex;
   flex-direction: row;
@@ -420,7 +420,7 @@ li {
 /* Footer */
 #main-footer{
   background: #333;
-  color: #f4f4f4;
+  color: #fff;
 }
 
 #main-footer .container{
