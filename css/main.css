@@ -588,39 +588,31 @@ li {
 
 /* About Features */
 #features .about-features{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap:5rem;
-  text-align: center;
+  display:flex;
+  justify-content: center;
+  text-align: start;
   align-items: center;
 }
 
 .about-features .feature-1,
 .about-features .feature-2,
 .about-features .feature-3 {
-  display: grid;
-  grid-template-areas: 
-    "border content content";
-  grid-gap:0.75rem;
-  margin: 6.3rem 0;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 10rem 3rem;
 }
 
 .about-features .content p{
   color: rgb(109, 109, 109);
 }
 
-/* Grid Area's */
-
-.about-features .content{
-  grid-area: content;
-}
-
 .about-features .border{
-  grid-area: border;
-}
-
-.about-features .border{
-  position: relative;
+  position: absolute;
+  left: 0%;
+  top: -120%;
   width: 100px;
   height: 100px;
   background: var(--secondary-color);

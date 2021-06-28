@@ -86,25 +86,21 @@
 
 /* About Features */
 #features .about-features{
-  grid-template-columns: 1fr;
+  flex-direction: row;
+  position: relative;
 }
 
 .about-features .feature-1,
 .about-features .feature-2,
 .about-features .feature-3 {
-  display: grid;
-  grid-template-areas: 
-    "border"
-    "content";
-  margin: 1rem;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
+  margin: 13rem 3rem;
 }
 
 .about-features .border{
-  position: relative;
-  left: 190px;
+  position: absolute;
+  left: 10%;
+  top: -85%;
+  margin: 0;
 }
 
 /* Section Team */
@@ -132,6 +128,15 @@
 
 /* Width 768 */
 @media(max-width: 768px){
+  /* Headers (utility) */
+  .header{
+    height: 70vh;
+  }
+
+  .overlay {
+    height: 70vh;
+  }
+
   /* Menu - A */
   #menu-a .menu-features {
     margin-left: 1.5rem;
@@ -154,17 +159,22 @@
     margin-right: 1rem;
   }
 
-  /* About Page */
-  .about-features .border{
-    position: relative;
-    left: 190px;
+  /* Header - B */
+  .header-b .bottom-line{
+    display: none;
   }
 
+  /* About Page */
   #about img{
     width: 630px;
     height: 450px;
     margin: 2.5rem 0;
   }
+
+  .about-features .border{
+    top: -150%;
+  }
+
 
   /* Order Form */
   #order .text-fields{
@@ -176,8 +186,8 @@
   }
 }
 
-/* Width 600 */
-@media(max-width: 600px){
+/* Width 750 */
+@media(max-width: 750px){
   /* Main Nav */
   .main-nav {
     flex-direction: column; 
@@ -194,7 +204,8 @@
   }
   
   .header-content h1 {
-    font-size: 3rem;
+    font-size: 5rem;
+    line-height: 4rem;
   }
   .header-content h1,
   .header-content p {
@@ -202,7 +213,7 @@
   }
 
   .header-content p{
-    font-size: small;
+    font-size: 1.1rem;
   }
 
   .header-content .btn {
@@ -249,11 +260,13 @@
 
   /* Header - A */
   .header-a h1{
-    font-size: 3rem;
+    font-size: 5rem;
+    line-height: 5rem;
+    margin-top: 2rem;
   }
 
   .header-a p{
-    font-size: small;
+    font-size: 1.1rem;
   }
 
   /* Menu - B */
@@ -263,16 +276,17 @@
   }
 
   /* Header - B */
-  .header-b h1{
-    font-size: 3rem;
+  .header-b .bottom-line{
+    display: none;
   }
 
   .header-b p{
-    font-size: small;
+    font-size: 1.1rem;
   }
 
   .header-reverse .lead{
-    font-size: 2rem;
+    font-size: 3rem;
+    line-height: 4rem;
   }
 
   /* Testimonials */
@@ -321,9 +335,24 @@
     margin: 2.5rem 0;
   }
 
-  .about-features .border{
+  #features .about-features{
+    display: flex;
+    flex-direction: column;
     position: relative;
-    left: 95px;
+    margin-top: 5rem;
+  }
+
+  .about-features .border{
+    position: absolute;
+    left: 0%;
+    top: -120%;
+    margin: 0;
+  }
+
+  .about-features .feature-1,
+  .about-features .feature-2,
+  .about-features .feature-3 {
+    margin:6rem 3rem;
   }
 
   #team .team-grid{
